@@ -1,3 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Barlow&family=Bellefair&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.active {
+  @apply no-underline decoration-white sm:underline;
+}
+
+.active-dot {
+  @apply bg-white opacity-100;
+}
+
+@layer components {
+  .h6-1 {
+    @apply font-["Bellefair"] text-[28px];
+  }
+
+  .h6-2 {
+    @apply font-['Barlow_Condensed'] text-[14px] tracking-[2.7px];
+  }
+
+  /* Same style with nav bar for use with Destination */
+  .h6-3 {
+    @apply font-["Barlow_Condensed"] text-[16px] tracking-[2.7px];
+  }
+}
+
+@layer base {
+  h1 {
+    @apply font-["Bellefair"] text-[150px];
+  }
+
+  h2 {
+    @apply font-["Bellefair"] text-[100px];
+  }
+
+  h3 {
+    @apply font-["Bellefair"] sm:text-[40px] md:text-[56px];
+  }
+
+  h4 {
+    @apply font-["Bellefair"] sm:text-[24px] md:text-[32px];
+  }
+
+  h5 {
+    @apply font-['Barlow_Condensed'] tracking-[4.75px] sm:text-[20px] md:text-[28px];
+  }
+
+  nav {
+    @apply font-["Barlow_Condensed"] tracking-[2.7px] sm:text-[14px] md:text-[16px];
+  }
+
+  body {
+    @apply font-["Barlow"] sm:text-[16px] md:text-[18px];
+  }
+}
